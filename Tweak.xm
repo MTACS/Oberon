@@ -23,7 +23,7 @@
 @end
 
 @interface SBIcon
--(id)applicationBundleID;
+- (id)applicationBundleID;
 @end
 
 @interface SBIconView 
@@ -74,19 +74,13 @@
 
 	playPauseItem.type = @"com.mtac.oberon.playpause";
 
-	if (isPlaying || isPaused) {
+	if ((isPlaying || isPaused) && ([self.icon.applicationBundleID isEqualToString:@"com.apple.Music"] || [self.icon.applicationBundleID isEqualToString:@"com.spotify.client"])) {
 	
 		[originalItems addObject:playPauseItem];
 	
 	}
 
-	if ([self.icon.applicationBundleID isEqualToString:@"com.apple.Music"] || [self.icon.applicationBundleID isEqualToString:@"com.spotify.client"]) {
-
-		%orig(originalItems);
-
-	}
-
-	%orig;
+	%orig(originalItems);
 
 }
 
