@@ -5,4 +5,5 @@ Deb download [here](https://github.com/MTACS/Oberon/blob/master/packages/com.mta
 ## Building
 
 ```
-git clone 
+git clone https://github.com/MTACS/Oberon.git && cd Oberon && make do
+```
