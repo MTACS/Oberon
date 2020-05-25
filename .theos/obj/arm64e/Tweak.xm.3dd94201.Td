@@ -1,5 +1,5 @@
-/Users/daf/Documents/Tweaks/Oberon/.theos/obj/arm64/Tweak.xm.6972d9a4.o: \
-  /Users/daf/Documents/Tweaks/Oberon/.theos/obj/arm64/Tweak.xm.mm \
+/Users/daf/Documents/Tweaks/oberon/.theos/obj/arm64e/Tweak.xm.3dd94201.o: \
+  /Users/daf/Documents/Tweaks/oberon/.theos/obj/arm64e/Tweak.xm.mm \
   /Users/daf/theos/Prefix.pch \
   /Users/daf/theos/vendor/include/_Prefix/BackwardsCompat.h \
   /Users/daf/theos/vendor/include/_Prefix/IOSMacros.h \

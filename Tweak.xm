@@ -22,6 +22,14 @@
 - (BOOL)isTemplate;
 @end
 
+@interface SBIcon
+-(id)applicationBundleID;
+@end
+
+@interface SBIconView 
+- (SBIcon *)icon;
+@end
+
 %hook SBIconView
 
 - (void)setApplicationShortcutItems:(NSArray *)arg1 {
@@ -72,7 +80,13 @@
 	
 	}
 
-	%orig(originalItems);
+	if ([self.icon.applicationBundleID isEqualToString:@"com.apple.Music"] || [self.icon.applicationBundleID isEqualToString:@"com.spotify.client"]) {
+
+		%orig(originalItems);
+
+	}
+
+	%orig;
 
 }
 
