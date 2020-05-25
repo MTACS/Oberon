@@ -1,0 +1,10 @@
+Package: com.mtac.oberon
+Name: Oberon
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An easy way to pause or play your music
+Maintainer: MTAC
+Author: MTAC
+Section: Tweaks
+Version: 1.0.0
+Installed-Size: 228
